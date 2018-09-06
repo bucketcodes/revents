@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Segment, List, Label, Item } from "semantic-ui-react";
 
 const EventDetailedSidebar = ({ attendees }) => {
