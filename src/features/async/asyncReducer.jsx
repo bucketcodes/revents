@@ -13,12 +13,12 @@ export const asyncActionFinished = (state) => {
     return {...state, loading: false}
 }
 
-export const asyncActionError = (state) => {
+export const asyncActionERROR = (state) => {
     return {...state, loading: false}
 }
 
 export default createReducer(initialState, {
     [ASYNC_ACTION_START]: asyncActionStarted,
-    [ASYNC_ACTION_ERROR]: asyncActionError,
+    [ASYNC_ACTION_ERROR]: asyncActionERROR,
     [ASYNC_ACTION_FINISH]: asyncActionFinished
 })
